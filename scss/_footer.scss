@@ -1,0 +1,25 @@
+/*FOOTER*/
+@mixin redesSociales {
+    font-size: 2rem;
+    color: $color-fuente-terciario;
+    padding: 3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: $color-fondo-principal;
+    height: 7rem;
+
+    .btn-primary {
+        color:$color-fuente-terciario;
+        padding: 1rem;
+        font-size: 2rem;
+        transition: all 0.3s ease;
+        &:hover{
+            color: #9eddf0;
+            transform: scale(1.10);
+        }
+    } 
+       
+}

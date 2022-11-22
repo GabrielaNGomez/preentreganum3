@@ -1,0 +1,139 @@
+/* MAIN GALERIA DE TRABAJOS*/
+.galeria-de-trabajos {
+    background-image: url(/img/BodyPages1277px.png);
+    background-repeat: no-repeat;
+    height: 638px;
+}
+
+
+.contenedor-galeria{
+    width: 114rem;
+    height: 63rem;
+    margin-left: 6rem;
+    margin-top: 4rem;
+    padding-right: 100px;
+    display: flex;
+
+    .card-galeria {
+            display: flex;
+            width: 334px;
+            height: 270px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-top: 8px;
+
+            h2 {
+                color: $color-fuente-terciario;
+                font-size: 3.5rem;
+                margin-left: 1.5rem;
+                margin-top: 6rem;
+            }
+
+            h3 {
+                color: $color-fuente-secundario;
+                font-size: 1.5rem;
+                margin-left: 1.5rem;
+                width: 90%;
+            }
+
+            h5{
+               margin-left: 12px;
+               color: $color-fuente-secundario;
+            }
+
+
+           
+                         
+        }
+            
+        }
+    
+
+
+.overlay {
+    position: fixed;
+    left:0;
+    top:0px;
+    width: 100vw;
+    height: 100vw;
+    background-color: rgb(0, 0, 0, .5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .7s ease;
+    visibility: hidden;
+    opacity: 0;
+
+    .slideshow {
+        width: 90%;
+        height: 90%;
+        background-color: rg (255, 255, 255, .9);
+        color: $color-fondo-principal;
+        position: relative;
+        display: flex;
+        justify-content: center;
+
+    .img{
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .btn_cerrar {
+        position: relative;
+        top: -15px;
+        right: -15px;
+        font-size: 35px;
+        background-color: rgb(0, 0, 0, .7);
+        color: $color-fuente-principal;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        transition: all .2s ease;
+
+        &:hover{
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+
+    .boton {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        color: $color-fondo-principal;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 70px;
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        cursor:pointer;
+        color: pink;
+        
+        &:hover > i {
+            transform: scale(1.1);
+            transition: all .2s ease;
+
+        }
+    }
+
+    .atras {
+        left:20px;
+    }
+    .adelante{
+        right: 20px;
+    }
+
+    .bi {
+        pointer-events: none;
+    }
+}
+
+}

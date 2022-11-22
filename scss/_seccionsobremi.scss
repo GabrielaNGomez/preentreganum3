@@ -1,0 +1,85 @@
+/*MAIN - SECCIÓN SOBRE MI*/
+.pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+          
+.container {
+             width: 60rem;
+             height: 53rem;
+             margin-top: 60px;
+             flex-flow: column wrap;
+
+            .group-text{
+                margin-top: 5px;
+
+                    h2 {
+                        color: $color-fuente-principal;
+                        font-size: 3rem;
+                        text-transform: uppercase;   
+                    }
+
+                    p {
+                        color: $color-fuente-principal;
+                        font-size: 1.5rem;
+                        width: 100%;
+                    }
+
+                    .button-CV {
+                        border: 1px solid $color-fuente-terciario;
+                        background-color: $color-fuente-terciario;
+                        border-radius: 0.5rem;
+                        padding: 0.5rem 1.5rem;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 1.2rem;
+                        width: 10rem;
+                        height: 3rem;
+                        display: inline-block;
+                        transition: all 0.3 ease-in;
+                        &:hover {
+                        background-color: #2b8aa7;
+                        border: 1px solid #2b8aa7;
+                        color: $color-fuente-principal;
+                        }
+                    }
+            }
+
+            .group-card {
+                top:5rem;
+                position: relative;
+                display: flex;
+                justify-content: center;
+                gap:1.8rem;
+
+                .card-sombremi {
+                    background-color: $color-fondo-principal;
+                    height: 20rem;    
+                    width: 15rem;
+                    align-items: center;
+                    text-align: center;
+                    border: 0.2rem solid $color-fuente-terciario;
+                        
+                        .row-top {
+                        font-size: 7rem;
+                        color: $color-fuente-terciario;
+                         }
+                        .row-bottom {
+                            h3 {
+                            color: $color-fuente-principal;
+                            font-weight: bold;
+                            font-size: 1.5rem;
+                            }
+                            p{
+                            color: $color-fuente-principal;
+                            font-size: 1.2rem;
+                            }
+                        }
+                 }
+
+            }
+    
+        }
+
+}
+
